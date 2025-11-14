@@ -17,16 +17,22 @@ public class RobotContainer {
 
   private final EnhancedXboxController driverController = new EnhancedXboxController(0)
                                                               .setLeftInverted(false)
-                                                              .setRightInverted(true)
+                                                              .setRightInverted(false)
+                                                              .setLeftSlewrate(0.8)
                                                               .setSticksDeadzone(0.05);
   public RobotContainer() {
 
-    robotBase.getDrivetrain().shuffleboard("DriveTrain");
+    robotBase.getDrivetrain().shuffleboard("DriveTrain"); 
     robotBase.getDrivetrain().setDriveCommand(driverController);
     configureBindings();
   }
 
-  private void configureBindings() {}
+  private void configureBindings() {
+    
+    driverController.start.onTrue(() -> robotBase.getDrivetrain().getIMU().setYaw(0));
+
+
+  }
 
   public Command getAutonomousCommand() {
     return Commands.print("No autonomous command configured");
