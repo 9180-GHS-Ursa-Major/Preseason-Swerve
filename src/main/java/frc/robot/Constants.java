@@ -2,6 +2,8 @@ package frc.robot;
 
 import ca.frc6390.athena.core.RobotBase;
 import ca.frc6390.athena.core.RobotBase.RobotBaseConfig;
+import ca.frc6390.athena.core.localization.RobotLocalization;
+import ca.frc6390.athena.core.localization.RobotLocalizationConfig;
 import ca.frc6390.athena.devices.EncoderConfig.EncoderType;
 import ca.frc6390.athena.devices.IMU.IMUType;
 import ca.frc6390.athena.devices.MotorController.Motor;
@@ -31,9 +33,10 @@ public class Constants {
                                                     .setEncoderOffset(ENCODER_OFFSETS)                                                    
                                                     .setCurrentLimit(60);
 
-    
+        public static RobotLocalizationConfig LOCALIZATION_CONFIG = RobotLocalizationConfig.defualt().setAutoPlannerPID(7,0,0,2,0,0);
 
-        public static RobotBaseConfig<SwerveDrivetrain> robotBase = RobotBaseConfig.swerve(DRIVETRAIN_CONFIG);
+        public static RobotBaseConfig<SwerveDrivetrain> robotBase = RobotBaseConfig.swerve(DRIVETRAIN_CONFIG)
+        .setLocalization(LOCALIZATION_CONFIG);
 }
 
 

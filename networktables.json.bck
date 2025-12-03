@@ -1,0 +1,66 @@
+[
+  {
+    "name": "/Preferences/Shuffleboard/Localization/Save Data/FieldPoseX",
+    "type": "double",
+    "value": 3.7236039034237214,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/Shuffleboard/Localization/Save Data/FieldPoseY",
+    "type": "double",
+    "value": 3.2364121001518957,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/Shuffleboard/Localization/Save Data/FieldPoseZ",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/Shuffleboard/Localization/Save Data/FieldPoseRollDeg",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/Shuffleboard/Localization/Save Data/FieldPosePitchDeg",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/Shuffleboard/Localization/Save Data/FieldPoseYawDeg",
+    "type": "double",
+    "value": 146.53829694345,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/Shuffleboard/Localization/Save Data/DriverYawDeg",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/Shuffleboard/Localization/Save Data/Valid",
+    "type": "boolean",
+    "value": true,
+    "properties": {
+      "persistent": true
+    }
+  }
+]

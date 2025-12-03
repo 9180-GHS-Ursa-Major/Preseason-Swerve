@@ -16,6 +16,11 @@ public class Robot extends TimedRobot {
   public Robot() {
     m_robotContainer = new RobotContainer();
   }
+  
+  @Override
+  public void robotInit(){
+    m_robotContainer.robotBase.getLocalization().resetRelativePose(0,0,0);
+  }
 
   @Override
   public void robotPeriodic() {

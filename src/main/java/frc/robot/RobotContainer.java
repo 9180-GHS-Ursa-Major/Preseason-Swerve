@@ -13,12 +13,12 @@ import edu.wpi.first.wpilibj2.command.Commands;
 
 public class RobotContainer {
 
-  public RobotBase<SwerveDrivetrain> robotBase = Constants.robotBase.create();
+  public RobotBase<SwerveDrivetrain> robotBase = Constants.robotBase.create().shuffleboard();
 
   private final EnhancedXboxController driverController = new EnhancedXboxController(0)
                                                               .setLeftInverted(false)
                                                               .setRightInverted(false)
-                                                              .setLeftSlewrate(0.8)
+                                                              .setLeftSlewrate(1.5)
                                                               .setSticksDeadzone(0.05);
   public RobotContainer() {
 
@@ -30,7 +30,6 @@ public class RobotContainer {
   private void configureBindings() {
     
     driverController.start.onTrue(() -> robotBase.getDrivetrain().getIMU().setYaw(0));
-
 
   }
 
